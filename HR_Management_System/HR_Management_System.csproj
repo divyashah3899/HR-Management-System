@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D6DFB2A-D4C5-4846-B95F-BA43834EE718}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HR_Management_System</RootNamespace>
+    <AssemblyName>HR_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apply_Leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply_Leave.Designer.cs">
+      <DependentUpon>Apply_Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Dashboard.Designer.cs">
+      <DependentUpon>Employee_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Leave_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Leave_List.Designer.cs">
+      <DependentUpon>Employee_Leave_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Login.Designer.cs">
+      <DependentUpon>Employee_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Dashbard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_Dashbard.Designer.cs">
+      <DependentUpon>HR_Dashbard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_Login.Designer.cs">
+      <DependentUpon>HR_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login As.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login As.Designer.cs">
+      <DependentUpon>Login As.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Employee.Designer.cs">
+      <DependentUpon>Manage_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Leave.Designer.cs">
+      <DependentUpon>Manage_Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Project.Designer.cs">
+      <DependentUpon>Manage_Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Employee_Details.Designer.cs">
+      <DependentUpon>Show_Employee_Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Apply_Leave.resx">
+      <DependentUpon>Apply_Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Dashboard.resx">
+      <DependentUpon>Employee_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Leave_List.resx">
+      <DependentUpon>Employee_Leave_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Login.resx">
+      <DependentUpon>Employee_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_Dashbard.resx">
+      <DependentUpon>HR_Dashbard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_Login.resx">
+      <DependentUpon>HR_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login As.resx">
+      <DependentUpon>Login As.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Employee.resx">
+      <DependentUpon>Manage_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Leave.resx">
+      <DependentUpon>Manage_Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Project.resx">
+      <DependentUpon>Manage_Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Show_Employee_Details.resx">
+      <DependentUpon>Show_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\ServiceReference1\HR_Management_System.ServiceReference1.Employee1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet.xsc">
+      <DependentUpon>HRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet.xss">
+      <DependentUpon>HRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet1.xsc">
+      <DependentUpon>HRMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet1.xss">
+      <DependentUpon>HRMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet2.xsc">
+      <DependentUpon>HRMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet2.xss">
+      <DependentUpon>HRMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet3.xsc">
+      <DependentUpon>HRMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet3.xss">
+      <DependentUpon>HRMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet4.xsc">
+      <DependentUpon>HRMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet4.xss">
+      <DependentUpon>HRMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet5.xsc">
+      <DependentUpon>HRMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet5.xss">
+      <DependentUpon>HRMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet6.xsc">
+      <DependentUpon>HRMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HRMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRMSDataSet6.xss">
+      <DependentUpon>HRMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
